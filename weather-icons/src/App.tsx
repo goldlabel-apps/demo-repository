@@ -2,6 +2,7 @@ import React from "react"
 import {
   Avatar,
   Button,
+  IconButton,
   Dialog,
   DialogTitle,
   DialogContent,
@@ -9,6 +10,8 @@ import {
   CardHeader,
   Typography,
   CardMedia,
+  CardContent,
+  Container,
 } from "@mui/material"
 
 function App() {
@@ -26,30 +29,32 @@ function App() {
           sx: {
             height: "100vh"
           }
-        }}
-
-      >
-        <DialogTitle>
-          <CardHeader 
-            avatar={<Avatar src="/logo.svg" />}
-            title={<Typography variant="h6">
-                      Weather Icons
-                    </Typography>}
-            subheader={<Typography variant="body1">
-            In this example we use create react app to build some 
-            Weather Icon Components we need for another project
-            </Typography>}
-          />
-          
-        </DialogTitle>
-        
+        }}>
         <DialogContent>
-          
-        <CardMedia 
-          component={"img"}
-          height={125}
-          src="/svg/All_Wether_Icons.svg"
-        />
+          <DialogTitle>
+            <Container maxWidth="md">
+              <CardHeader
+                avatar={<IconButton>
+                          <Avatar src="/logo.svg" />
+                          </IconButton>}
+                title={<Typography variant="h6">
+                          Weather Icons
+                        </Typography>}
+                subheader={<Typography variant="body1">
+                              Using create react app to make some Weather Icon Components
+                            </Typography>}
+              />
+            </Container>
+          </DialogTitle>
+          <Container maxWidth="md">
+            <CardContent>
+              <CardMedia 
+                component={"img"}
+                height={125}
+                src="/svg/All_Wether_Icons.svg"
+              />
+            </CardContent>
+          </Container>
         </DialogContent>
         <DialogActions>
           <Button variant="contained">
