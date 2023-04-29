@@ -1,0 +1,9 @@
+{
+  "name": "weather-node",
+  "scripts": {
+    "start": "clear && cd ./functions && npm start",
+    "watch": "clear && cd ./functions && npm run build:watch",
+    "lint": "clear && cd ./functions && npm run lint",
+    "deploy": "clear && firebase deploy"
+  }
+}
