@@ -1,6 +1,6 @@
 {
-  "name": "weather-react",
-  "version": "1.0.1",
+  "name": "demo-react",
+  "version": "1.0.2",
   "dependencies": {
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",
