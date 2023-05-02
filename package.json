@@ -1,6 +1,6 @@
 {
   "name": "demo-repository",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "A sample package.json",
   "dependencies": {
     "@primer/css": "17.0.1"
